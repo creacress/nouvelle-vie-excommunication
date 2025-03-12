@@ -1,0 +1,59 @@
+/* Header.module.css - Mobile First & Moderne */
+
+.header {
+  width: 100%;
+  background-color: #15803d;
+  color: white;
+  padding: 1rem 1.5rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #d1fae5;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .nav {
+    display: flex;
+  }
+  .menu-button {
+    display: none;
+  }
+}

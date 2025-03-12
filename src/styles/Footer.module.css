@@ -1,0 +1,19 @@
+/* footer.css - Mobile First */
+
+.footer {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #e5e5e5;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive */
+  @media (min-width: 640px) {
+    .footer {
+      font-size: 1rem;
+      padding: 1.5rem;
+    }
+  }
+  
