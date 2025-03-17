@@ -32,7 +32,13 @@ export default function Home() {
       <main className={styles.container}>
         {/* HERO SECTION */}
         <section className={styles.hero}>
-          <h1 className={styles.title}>Nouvelle Vie après l’Excommunication</h1>
+          <h1 className={styles.title}>
+            <span className={styles.mainTitle}>Crise de Conscience</span>
+            <br />
+            <span className={styles.subTitle}>
+              Nouvelle Vie après l’Excommunication
+            </span>
+          </h1>
           <p className={styles.text}>
             Accompagner, soutenir et défendre les personnes excommuniées pour
             leur offrir un nouveau départ.
@@ -41,7 +47,6 @@ export default function Home() {
             En savoir plus
           </Link>
         </section>
-        <ArticlesCarousel />
 
         {/* SECTIONS DYNAMIQUES */}
         <section className={styles.section}>
@@ -61,6 +66,7 @@ export default function Home() {
           </ul>
         </section>
 
+        <ArticlesCarousel />
         <section className={styles.section}>
           <h2 className={styles.subtitle}>Rejoignez-nous</h2>
           <p className={styles.text}>

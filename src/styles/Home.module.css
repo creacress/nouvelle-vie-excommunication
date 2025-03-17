@@ -11,33 +11,86 @@
 
 /* --- Hero Section --- */
 .hero {
-  max-width: 700px;
+  max-width: 800px;
   text-align: center;
-  padding: 2rem 1.5rem;
+  padding: 3rem 1.5rem;
   animation: fadeIn 1s ease-out;
 }
 
+/* --- TITRE PRINCIPAL --- */
 .title {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 700;
-  color: #6DA77F;
   margin-bottom: 1rem;
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
   animation: slideInDown 1s ease-out;
+  line-height: 1.3;
 }
 
-.text {
-  font-size: 1.2rem;
+/* "Crise de Conscience" stylisé */
+.mainTitle {
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: #6da77f;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 1.5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  background: linear-gradient(to right, #6da77f, #15803d);
+  -webkit-background-clip: text;
+}
+
+/* Sous-titre avec une couleur plus douce */
+.subTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #374151;
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-  max-width: 650px;
+  display: block;
+  margin-top: 0.5rem;
 }
 
+/* ANIMATION DU TITRE */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 3rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
 /* --- Call to Action Button --- */
 .button {
   display: inline-block;
-  background-color: #E5C07B;
+  background-color: #e5c07b;
   color: #333;
   padding: 0.85rem 1.75rem;
   border-radius: 10px;
@@ -72,11 +125,18 @@
   opacity: 1;
   transform: translateY(0);
 }
-
+.text,
+.section p {
+  color: #000 !important; 
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 650px;
+  margin-bottom: 1.5rem;
+}
 .subtitle {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #6DA77F;
+  color: #6da77f;
   margin-bottom: 1rem;
 }
 
@@ -96,8 +156,6 @@
   font-weight: 500;
 }
 
-
-
 /* --- Responsive --- */
 @media (min-width: 640px) {
   .title {
@@ -113,11 +171,21 @@
 
 /* --- Animations --- */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInDown {
-  from { transform: translateY(-20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

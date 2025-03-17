@@ -6,11 +6,11 @@ import Link from "next/link";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "À Propos | Nouvelle Vie après l’Excommunication",
+  title: "À Propos | Crise de Conscience",
   description:
-    "Découvrez l'association Nouvelle Vie après l’Excommunication, notre mission et notre engagement envers ceux qui ont été exclus pour leur offrir un nouveau départ.",
+    "Découvrez l'association Crise de conscience, notre mission et notre engagement envers ceux qui ont été exclus pour leur offrir un nouveau départ.",
   openGraph: {
-    title: "À Propos | Nouvelle Vie après l’Excommunication",
+    title: "À Propos | Crise de conscience",
     description:
       "Nous aidons les excommuniés à reconstruire leur vie avec un soutien moral, social et juridique.",
     url: "https://ton-site.com/about",
@@ -22,32 +22,32 @@ export const metadata: Metadata = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [
+  mainEntity: [
     {
       "@type": "Question",
-      "name": "Qui peut rejoindre l'association ?",
-      "acceptedAnswer": {
+      name: "Qui peut rejoindre l'association ?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Toute personne ayant été excommuniée ou souhaitant apporter son soutien peut nous rejoindre gratuitement."
-      }
+        text: "Toute personne ayant été excommuniée ou souhaitant apporter son soutien peut nous rejoindre gratuitement.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Quels types de soutien offrez-vous ?",
-      "acceptedAnswer": {
+      name: "Quels types de soutien offrez-vous ?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Nous offrons un soutien psychologique, social et juridique aux excommuniés pour les aider à reconstruire leur vie."
-      }
+        text: "Nous offrons un soutien psychologique, social et juridique aux excommuniés pour les aider à reconstruire leur vie.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Comment puis-je contribuer à votre cause ?",
-      "acceptedAnswer": {
+      name: "Comment puis-je contribuer à votre cause ?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Vous pouvez devenir bénévole, faire un don ou partager nos ressources pour sensibiliser davantage de personnes."
-      }
-    }
-  ]
+        text: "Vous pouvez devenir bénévole, faire un don ou partager nos ressources pour sensibiliser davantage de personnes.",
+      },
+    },
+  ],
 };
 
 export default function About() {
@@ -64,10 +64,10 @@ export default function About() {
         <section className={styles.content}>
           <h1 className={styles.title}>À Propos de l'Association</h1>
           <p className={styles.text}>
-            <strong>Nouvelle Vie après l’Excommunication</strong> est une association
-            dédiée à l’accompagnement des personnes excommuniées. Nous offrons
-            un soutien psychologique, social et juridique pour les aider à
-            reconstruire leur vie en toute sérénité.
+            <strong>Crise de conscience</strong> est une association dédiée à
+            l’accompagnement des personnes excommuniées. Nous offrons un soutien
+            psychologique, social et juridique pour les aider à reconstruire
+            leur vie en toute sérénité.
           </p>
         </section>
 
@@ -75,14 +75,25 @@ export default function About() {
         <section className={styles.section}>
           <h2 className={styles.subtitle}>Notre Mission</h2>
           <p className={styles.text}>
-            L'association s'engage à accompagner les personnes excommuniées en leur offrant
-            un soutien adapté à leurs besoins.
+            L'association s'engage à accompagner les personnes excommuniées en
+            leur offrant un soutien adapté à leurs besoins.
           </p>
           <ul className={styles.list}>
-            <li>🤝 <strong>Réseau de soutien :</strong> Mise en relation avec d'anciens excommuniés</li>
-            <li>⚖️ <strong>Assistance juridique :</strong> Conseils pour faire face aux difficultés légales</li>
-            <li>🧠 <strong>Accompagnement psychologique :</strong> Thérapies et groupes de parole</li>
-            <li>📚 <strong>Accès à des ressources :</strong> Guides et témoignages</li>
+            <li>
+              🤝 <strong>Réseau de soutien :</strong> Mise en relation avec
+              d'anciens excommuniés
+            </li>
+            <li>
+              ⚖️ <strong>Assistance juridique :</strong> Conseils pour faire
+              face aux difficultés légales
+            </li>
+            <li>
+              🧠 <strong>Accompagnement psychologique :</strong> Thérapies et
+              groupes de parole
+            </li>
+            <li>
+              📚 <strong>Accès à des ressources :</strong> Guides et témoignages
+            </li>
           </ul>
         </section>
 
@@ -90,9 +101,16 @@ export default function About() {
         <section className={styles.section}>
           <h2 className={styles.subtitle}>Nos Valeurs</h2>
           <ul className={styles.list}>
-            <li>💙 <strong>Empathie :</strong> Écoute attentive et bienveillance</li>
-            <li>🤝 <strong>Respect :</strong> Reconnaissance de la dignité de chacun</li>
-            <li>🌟 <strong>Solidarité :</strong> Un engagement collectif</li>
+            <li>
+              💙 <strong>Empathie :</strong> Écoute attentive et bienveillance
+            </li>
+            <li>
+              🤝 <strong>Respect :</strong> Reconnaissance de la dignité de
+              chacun
+            </li>
+            <li>
+              🌟 <strong>Solidarité :</strong> Un engagement collectif
+            </li>
           </ul>
         </section>
 

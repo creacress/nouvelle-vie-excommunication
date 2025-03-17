@@ -32,7 +32,7 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.headerContainer}>
         <Link href="/" className={styles.logo}>
-          Nouvelle Vie
+          Crise de Conscience
         </Link>
 
         {/* Bouton Hamburger */}
