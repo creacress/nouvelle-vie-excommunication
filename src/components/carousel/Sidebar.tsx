@@ -1,6 +1,6 @@
 "use client";
-import { ArticlesCarousel } from "@/components/carousel/ArticlesCarousel";
 import styles from "@/styles/Sidebar.module.css";
+import ArticlesCarousel from "./ArticlesCarousel";
 
 export function Sidebar() {
   return (

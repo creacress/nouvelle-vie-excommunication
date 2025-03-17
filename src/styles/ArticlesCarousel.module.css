@@ -1,49 +1,87 @@
 .carouselContainer {
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-  padding: 1.5rem;
-  background: #6da77f;
-  border-radius: 12px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
-}
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 1.5rem;
+    background: white; 
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* STRUCTURE DU CAROUSEL */
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    background: #f6f1e9; /* 🔥 Ajoute ce fond pour éviter le noir */
+  }
+  
+  .articleLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .articleImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #f6f1e9; /* 🔥 Fond ajouté pour éviter le noir */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .carousel {
+      height: 200px;
+    }
+  }
+  
 
-/* 🔥 Applique la couleur #f6f1e9 à toute la section */
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  background: #f6f1e9; /* Fond des côtés */
-}
-
-.slide {
-  font-size: 1.3rem;
-  font-weight: 600;
-  padding: 1rem;
-  transition: all 0.5s ease;
-}
-
+/* TITRE */
 .title {
   font-size: 1.8rem;
   font-weight: bold;
+  color: #166534;
   margin-bottom: 1rem;
 }
-.articleLink {
-  text-decoration: none;
-  color: #166534;
-  transition: opacity 0.3s;
+
+
+/* EFFET AU SURVOL */
+.articleLink:hover .articleImage {
+  transform: scale(1.05);
 }
 
-.articleLink:hover {
-  opacity: 0.7;
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  transition: 0.3s ease-in-out;
 }
 
-/* Responsive */
+.articleTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .carouselContainer {
-    max-width: 90%;
+  .carousel {
+    height: 200px;
+  }
+
+  .articleTitle {
+    font-size: 1.2rem;
   }
 }

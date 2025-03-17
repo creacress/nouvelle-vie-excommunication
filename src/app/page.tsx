@@ -2,9 +2,9 @@
 import { useEffect } from "react";
 import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header/Header";
-import { ArticlesCarousel } from "@/components/carousel/ArticlesCarousel"; // Carrousel en haut
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import ArticlesCarousel from "@/components/carousel/ArticlesCarousel";
 
 export default function Home() {
   useEffect(() => {
@@ -29,10 +29,6 @@ export default function Home() {
   return (
     <>
       <Header />
-
-      {/* 🎯 CAROUSEL DES DERNIERS ARTICLES EN HAUT */}
-      <ArticlesCarousel />
-
       <main className={styles.container}>
         {/* HERO SECTION */}
         <section className={styles.hero}>
@@ -45,6 +41,7 @@ export default function Home() {
             En savoir plus
           </Link>
         </section>
+        <ArticlesCarousel />
 
         {/* SECTIONS DYNAMIQUES */}
         <section className={styles.section}>
