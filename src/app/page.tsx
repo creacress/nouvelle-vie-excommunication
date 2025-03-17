@@ -43,9 +43,14 @@ export default function Home() {
             Accompagner, soutenir et défendre les personnes excommuniées pour
             leur offrir un nouveau départ.
           </p>
-          <Link href="/about" className={styles.button}>
-            En savoir plus
-          </Link>
+          <div className={styles.buttonContainer}>
+            <Link href="/about" className={styles.button}>
+              En savoir plus
+            </Link>
+            <Link href="/forum" className={styles.chatButton}>
+              💬 Rejoindre le Chat PIMO
+            </Link>
+          </div>
         </section>
 
         {/* SECTIONS DYNAMIQUES */}

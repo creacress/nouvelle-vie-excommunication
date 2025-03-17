@@ -83,3 +83,27 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 99;
 }
+
+.chatLink {
+  color: #ffffff;
+  background: #16a34a;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.chatLink:hover {
+  background: #14532d;
+}
+
+.forumLink {
+  color: #ffffff;
+  background: #15803d;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.forumLink:hover {
+  background: #14532d;
+}

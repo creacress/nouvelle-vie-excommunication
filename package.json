@@ -12,15 +12,21 @@
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@supabase/supabase-js": "^2.49.1",
+    "crypto-js": "^4.2.0",
     "framer-motion": "^12.5.0",
     "lucide-react": "^0.479.0",
+    "mongodb": "^6.14.2",
     "next": "15.2.2",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-hook-form": "^7.54.2"
+    "react-hook-form": "^7.54.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/mongodb": "^4.0.6",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.17",
     "@types/react": "^19",

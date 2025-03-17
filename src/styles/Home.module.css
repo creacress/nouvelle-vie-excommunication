@@ -127,7 +127,7 @@
 }
 .text,
 .section p {
-  color: #000 !important; 
+  color: #000 !important;
   font-size: 1.2rem;
   line-height: 1.7;
   max-width: 650px;
@@ -154,6 +154,26 @@
   gap: 10px;
   justify-content: center;
   font-weight: 500;
+}
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.chatButton {
+  background: #16a34a;
+  color: white;
+  padding: 0.85rem 1.75rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.chatButton:hover {
+  background: #14532d;
 }
 
 /* --- Responsive --- */

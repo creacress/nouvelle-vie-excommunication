@@ -82,6 +82,9 @@ export function Header() {
                       <Mail size={20} /> Contact
                     </Link>
                   </li>
+                  <Link href="/forum" className={styles.forumLink}>
+                    📢 Forum
+                  </Link>
                 </ul>
               </motion.nav>
             </>
