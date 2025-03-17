@@ -7,6 +7,7 @@ import { X, Menu, Home, Info, BookOpen, Mail } from "lucide-react";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   const toggleMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
@@ -23,6 +24,8 @@ export function Header() {
         setIsOpen(false);
       }
     };
+    const storedToken = localStorage.getItem("adminToken");
+    const adminToken = process.env.NEXT_PUBLIC_ADMIN_TOKEN;
 
     document.addEventListener("click", handleOutsideClick);
     return () => document.removeEventListener("click", handleOutsideClick);
@@ -85,6 +88,13 @@ export function Header() {
                   <Link href="/forum" className={styles.forumLink}>
                     📢 Forum
                   </Link>
+                  <Link
+                    href="/forum/new"
+                    className={styles.newPostButton}
+                  ></Link>
+                  {isAdmin && (
+                    <Link href="/forum/admin/pimo-access">🔑 Admin PIMO</Link>
+                  )}
                 </ul>
               </motion.nav>
             </>
