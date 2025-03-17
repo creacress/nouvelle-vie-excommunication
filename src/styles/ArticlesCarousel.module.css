@@ -1,0 +1,49 @@
+.carouselContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem;
+  background: #6da77f;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔥 Applique la couleur #f6f1e9 à toute la section */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  background: #f6f1e9; /* Fond des côtés */
+}
+
+.slide {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem;
+  transition: all 0.5s ease;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.articleLink {
+  text-decoration: none;
+  color: #166534;
+  transition: opacity 0.3s;
+}
+
+.articleLink:hover {
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carouselContainer {
+    max-width: 90%;
+  }
+}
