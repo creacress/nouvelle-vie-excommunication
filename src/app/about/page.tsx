@@ -8,13 +8,20 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "À Propos | Crise de Conscience",
   description:
-    "Découvrez l'association Crise de conscience, notre mission et notre engagement envers ceux qui ont été exclus pour leur offrir un nouveau départ.",
+    "Découvrez l'association Crise de Conscience, notre mission et notre engagement envers ceux qui ont été exclus pour leur offrir un nouveau départ.",
   openGraph: {
-    title: "À Propos | Crise de conscience",
+    title: "À Propos | Crise de Conscience",
     description:
       "Nous aidons les excommuniés à reconstruire leur vie avec un soutien moral, social et juridique.",
     url: "https://ton-site.com/about",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "À Propos | Crise de Conscience",
+    description:
+      "Découvrez notre mission auprès des excommuniés. Soutien moral, juridique et social.",
+    images: ["https://ton-site.com/og-about.jpg"],
   },
 };
 
@@ -54,67 +61,46 @@ export default function About() {
   return (
     <>
       <Header />
-      {/* Données structurées injectées pour Google */}
       <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className={styles.container}>
-        {/* Section Présentation */}
+        {/* Présentation */}
         <section className={styles.content}>
           <h1 className={styles.title}>À Propos de l'Association</h1>
           <p className={styles.text}>
-            <strong>Crise de conscience</strong> est une association dédiée à
-            l’accompagnement des personnes excommuniées. Nous offrons un soutien
-            psychologique, social et juridique pour les aider à reconstruire
-            leur vie en toute sérénité.
+            <strong>Crise de Conscience</strong> est une association dédiée à l’accompagnement
+            des personnes excommuniées. Nous offrons un soutien psychologique, social et
+            juridique pour les aider à reconstruire leur vie en toute sérénité.
           </p>
         </section>
 
-        {/* Section Notre Mission */}
+        {/* Mission */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>Notre Mission</h2>
           <p className={styles.text}>
-            L'association s'engage à accompagner les personnes excommuniées en
-            leur offrant un soutien adapté à leurs besoins.
+            Nous nous engageons à accompagner les personnes excommuniées avec bienveillance.
           </p>
           <ul className={styles.list}>
-            <li>
-              🤝 <strong>Réseau de soutien :</strong> Mise en relation avec
-              d'anciens excommuniés
-            </li>
-            <li>
-              ⚖️ <strong>Assistance juridique :</strong> Conseils pour faire
-              face aux difficultés légales
-            </li>
-            <li>
-              🧠 <strong>Accompagnement psychologique :</strong> Thérapies et
-              groupes de parole
-            </li>
-            <li>
-              📚 <strong>Accès à des ressources :</strong> Guides et témoignages
-            </li>
+            <li>🤝 <strong>Réseau de soutien :</strong> Mise en relation avec d'anciens excommuniés</li>
+            <li>⚖️ <strong>Assistance juridique :</strong> Conseils pour faire face aux difficultés légales</li>
+            <li>🧠 <strong>Accompagnement psychologique :</strong> Thérapies et groupes de parole</li>
+            <li>📚 <strong>Ressources :</strong> Accès à des guides pratiques et témoignages</li>
           </ul>
         </section>
 
-        {/* Section Nos Valeurs */}
+        {/* Valeurs */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>Nos Valeurs</h2>
           <ul className={styles.list}>
-            <li>
-              💙 <strong>Empathie :</strong> Écoute attentive et bienveillance
-            </li>
-            <li>
-              🤝 <strong>Respect :</strong> Reconnaissance de la dignité de
-              chacun
-            </li>
-            <li>
-              🌟 <strong>Solidarité :</strong> Un engagement collectif
-            </li>
+            <li>💙 <strong>Empathie :</strong> Écoute attentive et bienveillance</li>
+            <li>🤝 <strong>Respect :</strong> Reconnaissance de la dignité de chacun</li>
+            <li>🌟 <strong>Solidarité :</strong> Un engagement collectif pour avancer ensemble</li>
           </ul>
         </section>
 
-        {/* Section Call to Action */}
+        {/* Call To Action */}
         <div className={styles.buttons}>
           <Link href="/" className={styles.button}>
             Retour à l'accueil
